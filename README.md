@@ -15,7 +15,7 @@ This project is made to gather and analyse TFT games data.
 - [RiotDeveloper](https://developer.riotgames.com/) account for api key
 
 ## How it works
-- *tft_matches_data_extraction.ipynb* extracts data (it can be rather heavy, 60000 matches ~1.2GBs). API default limits are - 20 requests every 1 seconds(s), 100 requests every 2 minutes(s), so extraction can take some time. Matches data is preseneted in the form of heavy nested jsons(example in repo). Only challenger games for now.
+- *tft_matches_data_extraction.ipynb* extracts data (it can be rather heavy, 60000 matches ~1.2GBs). API default limits are - 20 requests every 1 seconds(s), 100 requests every 2 minutes(s), so extraction can take some time. Matches data is preseneted in the form of heavy nested jsons(example in repo, use [jsonviewer](https://jsonviewer.stack.hu/) to read normally). Only challenger games for now.
 - *matches_data_transformation.ipynb* parses useful data from a pile. I used simple python list/dict/set methods as they are simple and fast. Main functions parse augment placements, augments mean placement, character placements, character-item placement. All data have patch, region, set labels to choose from.
 
 ## What's next
